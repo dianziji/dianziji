@@ -4,7 +4,7 @@ Full-stack engineer in New York — Next.js / TypeScript on the front, Python (F
 
 I was an urban and landscape designer first. Three years on smart-city and headquarters projects taught me to think in systems, constraints, and the people who have to live inside what you build. I design software the same way.
 
-**Open to work** — full-stack, backend, or AI-application roles · US work authorized, no sponsorship needed · [LinkedIn](https://www.linkedin.com/in/shuoyang89) · [shuo.yang@tufts.edu](mailto:shuo.yang@tufts.edu)
+**Open to work** — full-stack, backend, or AI-application roles · US work authorized, no sponsorship needed · [LinkedIn](https://www.linkedin.com/in/shuoyang89) · [shuoy.ny@gmail.com](mailto:shuoy.ny@gmail.com)
 
 ---
 
