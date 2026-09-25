@@ -16,11 +16,12 @@ Organizations run a weekly prayer wall with roles, invitations, branding, and sc
 → [architecture & incident write-up](https://github.com/dianziji/prayer-walls)
 
 ### [Bethel Renewal Center](https://bethelrc.org) — headless CMS rebuild
-Migrated a legacy monolithic WordPress site to a headless architecture: Next.js frontend over WPGraphQL with typed query contracts, a normalization layer, ISR revalidation, and a ZH/EN bilingual pipeline with unified locale routing and field-level fallback. Defined the CPT/ACF schema and publishing SOP the editors now work from.
-`Next.js` `TypeScript` `WPGraphQL` `GraphQL` `ISR` `WordPress`
+Migrated a legacy monolithic WordPress site to a headless architecture: Next.js frontend over WPGraphQL with typed query contracts, a normalization layer, ISR revalidation, and a ZH/EN bilingual pipeline with unified locale routing and field-level fallback. Defined the CPT/ACF schema and publishing SOP the editors now work from. GitHub Actions runs tests, lint, and build on every pull request and every push to main; a passing run on main triggers the Vercel deploy.
+`Next.js` `TypeScript` `WPGraphQL` `GraphQL` `ISR` `WordPress` `GitHub Actions`
+→ [source](https://github.com/dianziji/brc-web)
 
 ### [Bible Reference AI](https://github.com/dianziji/bible-reference-ai) — RAG scripture assistant
-31,000+ KJV verses embedded into Pinecone; FastAPI service that moderates the question, retrieves with a score threshold, answers with `gpt-4o-mini` constrained to the retrieved verses, and returns those verses as structured citations. Evaluated with Ragas on faithfulness and relevancy; Dockerized with Kubernetes manifests.
+31,000+ KJV verses embedded into Pinecone; FastAPI service that moderates the question, retrieves with a score threshold, answers with GPT-4o constrained to the retrieved verses, and returns those verses as structured citations. Evaluated with Ragas on faithfulness and relevancy; Dockerized with Kubernetes manifests.
 `FastAPI` `LangChain` `Pinecone` `OpenAI` `Ragas` `Next.js` `Docker` `Kubernetes`
 
 ### [MetaSpectra+ 3D Visualization](https://meta-imaging.qiguo.org/visualization) — scroll-driven WebGL paper walkthrough
@@ -29,8 +30,8 @@ Ten-scene React Three Fiber walkthrough of a hyperspectral camera paper for a Pu
 → [architecture write-up](https://github.com/dianziji/metaspectra-visualization)
 
 ### PosturePal — posture tracking and productivity app
-Tufts M.S. capstone. Django REST backend for posture events, sessions, and longitudinal analytics; MediaPipe Pose inference pipeline for real-time feedback; guest vs. authenticated data scoping; Docker Compose and GitHub Actions CI.
-`Django` `MediaPipe` `PostgreSQL` `Docker Compose` `GitHub Actions`
+Tufts M.S. capstone. Django REST backend for posture events, sessions, and longitudinal analytics; MediaPipe Pose inference pipeline for real-time feedback; guest vs. authenticated data scoping; frontend and backend containerized with Docker Compose.
+`Django` `MediaPipe` `PostgreSQL` `Docker Compose`
 
 ### [SwiftUI Game of Life](https://github.com/dianziji/cs151Swift/tree/main/FinalProject) — iOS simulator
 Interactive cellular-automaton simulator in SwiftUI, including a from-scratch SceneKit view that wraps the grid onto a 3D torus.
