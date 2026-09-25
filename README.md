@@ -1,60 +1,48 @@
-# 👋 Hi, I’m Shuo Yang  
+# Shuo Yang
 
-🔎 **Open to Work**  
-Full-stack engineer with a background in architecture and urban design.  
-Graduated with an **M.S. in Computer Science from Tufts University (GPA 3.92/4.0)**.  
-I bring systematic design thinking from both physical and digital worlds to build scalable, user-centered software.  
+Full-stack engineer in New York — Next.js / TypeScript on the front, Python (FastAPI, Django) and PostgreSQL on the back. M.S. Computer Science, Tufts University.
 
----
+I was an urban and landscape designer first. Three years on smart-city and headquarters projects taught me to think in systems, constraints, and the people who have to live inside what you build. I design software the same way.
 
-## 🌟 About Me  
-
-I bring **three years of professional experience in the design industry**, working at a high-end design firm on forward-looking projects such as **smart cities, high-tech company headquarters, and future urban environments**. These projects engaged with concepts like **public realm design, autonomous transportation, robotic-embedded buildings, and data-driven planning**, which trained me to think systematically, collaborate across disciplines, and design with users and data at the center.  
-
-This background continues to shape how I approach **software engineering**.  
-
-To me, both architecture and engineering are about **designing systems**—one in the **physical world**, the other in the **abstract, digital world**. Both require **systematic thinking, structured problem-solving, and user-oriented design principles**. My experience creating physical spaces has strengthened the way I think about building abstract systems, and I now bring that mindset into my work as a **full-stack engineer**.  
+**Open to work** — full-stack, backend, or AI-application roles · US work authorized, no sponsorship needed · [LinkedIn](https://www.linkedin.com/in/shuoyang89) · [shuo.yang@tufts.edu](mailto:shuo.yang@tufts.edu)
 
 ---
 
-## 💻 Technical Strengths  
+## Work
 
-- **Languages:** Python, JavaScript, TypeScript, Java, C++, Swift, HTML, CSS  
-- **Frameworks & Libraries:** Next.js, React, Django REST Framework, FastAPI, Node.js, Express.js, MediaPipe Pose, SQLAlchemy  
-- **Databases:** PostgreSQL, MySQL, MongoDB, SQLite, Supabase  
-- **DevOps & Tools:** Docker, Docker Compose, GitHub Actions, Vercel, Heroku, Postman  
-- **Patterns & Practices:** MVC, Composable Architecture, CI/CD pipelines, secure authentication (JWT, NextAuth, Google OAuth)  
+### [Prayer Walls](https://prayer-walls.com) — multi-tenant community platform
+Organizations run a weekly prayer wall with roles, invitations, branding, and scoped analytics. Tenant isolation is enforced in Postgres with Supabase RLS; reads are pre-aggregated, per-user state is batched, and a k6 suite at 5–100 virtual users gates each release after a real Sunday outage. **100+ monthly active users across 10+ countries.**
+`Next.js 15` `TypeScript` `Supabase` `PostgreSQL / PL/pgSQL` `TanStack Query` `Jest` `Playwright` `k6`
+→ [architecture & incident write-up](https://github.com/dianziji/prayer-walls)
 
----
+### [Bethel Renewal Center](https://bethelrc.org) — headless CMS rebuild
+Migrated a legacy monolithic WordPress site to a headless architecture: Next.js frontend over WPGraphQL with typed query contracts, a normalization layer, ISR revalidation, and a ZH/EN bilingual pipeline with unified locale routing and field-level fallback. Defined the CPT/ACF schema and publishing SOP the editors now work from.
+`Next.js` `TypeScript` `WPGraphQL` `GraphQL` `ISR` `WordPress`
 
-## 🛠️ Tech Stack  
+### [Bible Reference AI](https://github.com/dianziji/bible-reference-ai) — RAG scripture assistant
+31,000+ KJV verses embedded into Pinecone; FastAPI service that moderates the question, retrieves with a score threshold, answers with `gpt-4o-mini` constrained to the retrieved verses, and returns those verses as structured citations. Evaluated with Ragas on faithfulness and relevancy; Dockerized with Kubernetes manifests.
+`FastAPI` `LangChain` `Pinecone` `OpenAI` `Ragas` `Next.js` `Docker` `Kubernetes`
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Code-Python-blue?logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Code-JavaScript-yellow?logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Code-TypeScript-blue?logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Framework-React-61DAFB?logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Framework-Next.js-black?logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Backend-Django-092E20?logo=django&logoColor=white" />
-  <img src="https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Database-PostgreSQL-316192?logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Database-MongoDB-47A248?logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/DevOps-Docker-2496ED?logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cloud-Vercel-black?logo=vercel&logoColor=white" />
-</p>
+### [MetaSpectra+ 3D Visualization](https://meta-imaging.qiguo.org/visualization) — scroll-driven WebGL paper walkthrough
+Ten-scene React Three Fiber walkthrough of a hyperspectral camera paper for a Purdue research team. Scroll is the single source of truth; per-frame writes go straight to Three.js refs in ordered priority lanes, so animation costs zero React re-renders. Playwright visual regression made deterministic with SwiftShader. **Adopted as the paper's official visualization — CVPR 2026 Oral.**
+`React` `Three.js` `React Three Fiber` `Zustand` `Vite` `Playwright`
+→ [architecture write-up](https://github.com/dianziji/metaspectra-visualization)
 
----
+### PosturePal — posture tracking and productivity app
+Tufts M.S. capstone. Django REST backend for posture events, sessions, and longitudinal analytics; MediaPipe Pose inference pipeline for real-time feedback; guest vs. authenticated data scoping; Docker Compose and GitHub Actions CI.
+`Django` `MediaPipe` `PostgreSQL` `Docker Compose` `GitHub Actions`
 
-## 🌍 What Drives Me  
-
-Whether in **physical design** or **software engineering**, I see my role as an **architect of systems**—creating environments where people can work, live, and connect more effectively.  
-
-My goal is to build technology that is **scalable, human-centered, and impactful**.  
+### [SwiftUI Game of Life](https://github.com/dianziji/cs151Swift/tree/main/FinalProject) — iOS simulator
+Interactive cellular-automaton simulator in SwiftUI, including a from-scratch SceneKit view that wraps the grid onto a 3D torus.
+`Swift` `SwiftUI` `SceneKit`
 
 ---
 
-## 📫 Let’s Connect  
+## Stack
 
-- [LinkedIn](https://www.linkedin.com/in/shuoyang89)  
-- [Email](mailto:shuo.yang@tufts.edu)  
-- [GitHub Projects](#)  
+**Languages** TypeScript · JavaScript · Python · Swift · SQL · Java · C++
+**Frontend** React · Next.js · Tailwind · React Three Fiber · SwiftUI
+**Backend** FastAPI · Django REST Framework · Node.js · GraphQL · REST
+**Data** PostgreSQL · Supabase · Pinecone · Redis · MongoDB
+**Infra & tooling** Docker · Kubernetes · GitHub Actions · Vercel · Playwright · Jest · k6
+**AI** OpenAI API · LangChain · RAG · Ragas
